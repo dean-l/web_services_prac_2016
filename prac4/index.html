@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="">
+<head>
+    <title></title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <h2>All Players</h2>
+        <ul id="players" />
+    </div>
+    <div>
+        <h2>Search or Delete</h2>
+        <select id="Select1">
+            <option name="Registration_ID" value="ID">ID</option>
+            <option name="playerName" value="Name">Name</option>
+        </select>
+        <input type="text" id="playerId" size="5" />
+        <input type="button" value="Search" onclick="find();" />
+        <input type="button" value="Delete" onclick="del();" />
+        <p id="player" />
+    </div>
+    <h2>Player Registration</h2>
+    <form>
+        <label for="id">Registration ID:</label> <input type="text" id="id" name="Registration_ID" /> <br></br>
+        <label for="fname">First Name:</label> <input type="text" id="fname" name="Player_name" /> <br></br>
+        <label for="lname">Last Name:</label> <input type="text" id="lname" name="LName" /><br></br>
+        <label for="team">Team Name:</label> <input type="text" id="team" name="Team_name" /><br></br>
+        <label for="dob">Date of Birth (MM-DD-YY):</label> <input type="text" id="dob" name="Date_of_birth" /><br></br>
+        <input type="button" id="post" value="Update" onclick="update();" />
+    </form>
+    <p id="error" />
+</body>
+</html>
